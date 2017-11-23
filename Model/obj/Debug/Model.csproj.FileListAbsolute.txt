@@ -2,3 +2,4 @@ c:\users\duoc\documents\visual studio 2015\Projects\Integracion\Model\bin\Debug\
 c:\users\duoc\documents\visual studio 2015\Projects\Integracion\Model\bin\Debug\Model.pdb
 c:\users\duoc\documents\visual studio 2015\Projects\Integracion\Model\obj\Debug\Model.dll
 c:\users\duoc\documents\visual studio 2015\Projects\Integracion\Model\obj\Debug\Model.pdb
+c:\users\duoc\documents\visual studio 2015\Projects\Integracion\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache

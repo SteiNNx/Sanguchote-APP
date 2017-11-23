@@ -1,0 +1,7 @@
+c:\users\duoc\documents\visual studio 2015\Projects\Integracion\DataAccesOracle\bin\Debug\DataAccesOracle.dll.config
+c:\users\duoc\documents\visual studio 2015\Projects\Integracion\DataAccesOracle\bin\Debug\DataAccesOracle.dll
+c:\users\duoc\documents\visual studio 2015\Projects\Integracion\DataAccesOracle\bin\Debug\DataAccesOracle.pdb
+c:\users\duoc\documents\visual studio 2015\Projects\Integracion\DataAccesOracle\bin\Debug\Oracle.ManagedDataAccess.dll
+c:\users\duoc\documents\visual studio 2015\Projects\Integracion\DataAccesOracle\obj\Debug\DataAccesOracle.csprojResolveAssemblyReference.cache
+c:\users\duoc\documents\visual studio 2015\Projects\Integracion\DataAccesOracle\obj\Debug\DataAccesOracle.dll
+c:\users\duoc\documents\visual studio 2015\Projects\Integracion\DataAccesOracle\obj\Debug\DataAccesOracle.pdb

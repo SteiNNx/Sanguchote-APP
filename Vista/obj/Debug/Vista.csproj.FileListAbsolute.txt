@@ -1,0 +1,8 @@
+c:\users\duoc\documents\visual studio 2015\Projects\Integracion\Vista\bin\Debug\Vista.exe.config
+c:\users\duoc\documents\visual studio 2015\Projects\Integracion\Vista\bin\Debug\Vista.exe
+c:\users\duoc\documents\visual studio 2015\Projects\Integracion\Vista\bin\Debug\Vista.pdb
+c:\users\duoc\documents\visual studio 2015\Projects\Integracion\Vista\obj\Debug\Vista.csprojResolveAssemblyReference.cache
+c:\users\duoc\documents\visual studio 2015\Projects\Integracion\Vista\obj\Debug\Vista.Properties.Resources.resources
+c:\users\duoc\documents\visual studio 2015\Projects\Integracion\Vista\obj\Debug\Vista.csproj.GenerateResource.Cache
+c:\users\duoc\documents\visual studio 2015\Projects\Integracion\Vista\obj\Debug\Vista.exe
+c:\users\duoc\documents\visual studio 2015\Projects\Integracion\Vista\obj\Debug\Vista.pdb

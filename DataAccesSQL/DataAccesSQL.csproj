@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CL_Conexion.cs" />
+    <Compile Include="DAO_DetalleCompra.cs" />
     <Compile Include="DAO_Compra.cs" />
     <Compile Include="DAO_Producto.cs" />
     <Compile Include="DAO_Usuario.cs" />

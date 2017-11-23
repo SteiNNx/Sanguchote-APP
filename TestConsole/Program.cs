@@ -21,6 +21,19 @@ namespace TestConsole
 
             //TestInsertarComprar();
 
+            //TestListarDetalleCompraPorId(1);
+        }
+
+        private static void TestListarDetalleCompraPorId(int id_compra)
+        {
+            foreach (CL_DetalleCompra item in new DAO_DetalleCompra().obtenerDetalleCompraXIdCompra(id_compra))
+            {
+                Console.WriteLine("Id Compra: " + item.Compra.Id_compra);
+                Console.WriteLine("Producto: " + item.Producto.Nombre_producto);
+                Console.WriteLine("Cantidad: " + item.Cantidad);
+                Console.WriteLine("*************************");
+            }
+            Console.ReadKey();
         }
 
         private static void TestInsertarComprar()

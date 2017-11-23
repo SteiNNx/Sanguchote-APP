@@ -9,7 +9,7 @@ namespace Model
     public class CL_DetalleCompra
     {
         public CL_Producto Producto { get; set; }
-        public CL_Usuario Usuario { get; set; }
+        public CL_Compra Compra { get; set; }
         public int Cantidad{ get; set; }
 
         public CL_DetalleCompra()
