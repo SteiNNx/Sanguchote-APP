@@ -1,0 +1,10 @@
+c:\users\duoc\documents\visual studio 2015\Projects\Integracion\TestConsole\bin\Debug\TestConsole.exe.config
+c:\users\duoc\documents\visual studio 2015\Projects\Integracion\TestConsole\bin\Debug\TestConsole.exe
+c:\users\duoc\documents\visual studio 2015\Projects\Integracion\TestConsole\bin\Debug\TestConsole.pdb
+c:\users\duoc\documents\visual studio 2015\Projects\Integracion\TestConsole\bin\Debug\DataAccesSQL.dll
+c:\users\duoc\documents\visual studio 2015\Projects\Integracion\TestConsole\bin\Debug\Model.dll
+c:\users\duoc\documents\visual studio 2015\Projects\Integracion\TestConsole\bin\Debug\DataAccesSQL.pdb
+c:\users\duoc\documents\visual studio 2015\Projects\Integracion\TestConsole\bin\Debug\Model.pdb
+c:\users\duoc\documents\visual studio 2015\Projects\Integracion\TestConsole\obj\Debug\TestConsole.csprojResolveAssemblyReference.cache
+c:\users\duoc\documents\visual studio 2015\Projects\Integracion\TestConsole\obj\Debug\TestConsole.exe
+c:\users\duoc\documents\visual studio 2015\Projects\Integracion\TestConsole\obj\Debug\TestConsole.pdb
