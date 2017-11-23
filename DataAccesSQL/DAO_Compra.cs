@@ -61,11 +61,11 @@ namespace DataAccesSQL
             bool resp = false;
             try
             {
-                string sql = "";
+                string sql = "INSERT INTO Compras VALUES (" + comp.Usuario.Id_usuario + ",'" + comp.Fecha_compra + "'," + comp.Total_Pago + ");";
                 if (cone.State != System.Data.ConnectionState.Open) { cone.Open(); }
                 SqlCommand cmd = new SqlCommand(sql, cone);
                 int cant = cmd.ExecuteNonQuery();
-                if (cant>0){ resp=true; }
+                if (cant > 0) { resp = true; }
             }
             catch (Exception ex)
             {
@@ -76,6 +76,31 @@ namespace DataAccesSQL
                 cone.Close();
             }
             return resp;
+        }
+
+        public int maxIdCompra()
+        {
+            int max = 0;
+            try
+            {
+                string sql = "SELECT MAX(id_compra) as maximo FROM Compras;";
+                if (cone.State != System.Data.ConnectionState.Open) { cone.Open(); }
+                SqlCommand cmd = new SqlCommand(sql, cone);
+                SqlDataReader dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    max = Convert.ToInt32(dr["maximo"].ToString());
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            finally
+            {
+                cone.Close();
+            }
+            return max;
         }
     }
 }

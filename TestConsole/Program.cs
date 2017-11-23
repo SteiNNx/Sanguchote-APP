@@ -18,6 +18,22 @@ namespace TestConsole
             //TestListarProductos();
 
             //TestListarCompras();
+
+            //TestInsertarComprar();
+
+        }
+
+        private static void TestInsertarComprar()
+        {
+            CL_Compra com = new CL_Compra();
+            CL_Usuario user = new CL_Usuario();
+            user.Id_usuario = 1;
+            com.Usuario = user;
+            com.Fecha_compra = "2017-11-23";
+            com.Total_Pago = 1000;
+
+            DAO_Compra dao = new DAO_Compra();
+            dao.insertarCompra(com);
         }
 
         private static void TestListarCompras()
