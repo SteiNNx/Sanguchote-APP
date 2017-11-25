@@ -140,6 +140,7 @@
             this.btn_finalizar.TabIndex = 11;
             this.btn_finalizar.Text = "Finalizar";
             this.btn_finalizar.UseVisualStyleBackColor = true;
+            this.btn_finalizar.Click += new System.EventHandler(this.btn_finalizar_Click);
             // 
             // label4
             // 

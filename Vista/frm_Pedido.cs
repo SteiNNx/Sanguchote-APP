@@ -99,5 +99,10 @@ namespace Vista
                 throw new Exception(ex.Message);
             }
         }
+
+        private void btn_finalizar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
