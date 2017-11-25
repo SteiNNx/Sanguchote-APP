@@ -8,4 +8,3 @@ C:\Users\SteinnxLabs\Documents\Visual Studio 2017\Proyects\C-\Model\bin\Debug\Mo
 C:\Users\SteinnxLabs\Documents\Visual Studio 2017\Proyects\C-\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
 C:\Users\SteinnxLabs\Documents\Visual Studio 2017\Proyects\C-\Model\obj\Debug\Model.dll
 C:\Users\SteinnxLabs\Documents\Visual Studio 2017\Proyects\C-\Model\obj\Debug\Model.pdb
-C:\Users\SteinnxLabs\Documents\Visual Studio 2017\Proyects\C-\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache

@@ -15,7 +15,6 @@ C:\Users\SteinnxLabs\Documents\Visual Studio 2017\Proyects\C-\TestConsole\bin\De
 C:\Users\SteinnxLabs\Documents\Visual Studio 2017\Proyects\C-\TestConsole\bin\Debug\Model.dll
 C:\Users\SteinnxLabs\Documents\Visual Studio 2017\Proyects\C-\TestConsole\bin\Debug\DataAccesSQL.pdb
 C:\Users\SteinnxLabs\Documents\Visual Studio 2017\Proyects\C-\TestConsole\bin\Debug\Model.pdb
-C:\Users\SteinnxLabs\Documents\Visual Studio 2017\Proyects\C-\TestConsole\obj\Debug\TestConsole.csprojResolveAssemblyReference.cache
 C:\Users\SteinnxLabs\Documents\Visual Studio 2017\Proyects\C-\TestConsole\obj\Debug\TestConsole.csproj.CoreCompileInputs.cache
 C:\Users\SteinnxLabs\Documents\Visual Studio 2017\Proyects\C-\TestConsole\obj\Debug\TestConsole.exe
 C:\Users\SteinnxLabs\Documents\Visual Studio 2017\Proyects\C-\TestConsole\obj\Debug\TestConsole.pdb
