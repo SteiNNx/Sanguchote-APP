@@ -1,0 +1,13 @@
+CREATE TABLE RegistroVentas
+  (
+    id_registro_ventas INTEGER NOT NULL ,
+    id_compra          INTEGER ,
+    total              INTEGER ,
+    propina            INTEGER
+  ) ;
+ALTER TABLE RegistroVentas ADD CONSTRAINT RegistroVentas_PK PRIMARY KEY ( id_registro_ventas ) ;
+
+CREATE SEQUENCE SEQ_REG START WITH 1
+ INCREMENT BY 1;
+
+//INSERT INTO REGISTROVENTAS VALUES(SEQ_REG.NEXTVAL,1,10,10);
