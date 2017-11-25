@@ -22,6 +22,7 @@
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -113,6 +114,20 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataAccesOracle\DataAccesOracle.csproj">
+      <Project>{57ea86cf-9c68-4646-aee6-bc22f3850705}</Project>
+      <Name>DataAccesOracle</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccesSQL\DataAccesSQL.csproj">
+      <Project>{2f9c0469-0f97-4eb7-8179-265cd74398fd}</Project>
+      <Name>DataAccesSQL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{cc1e2eca-7e3b-47e9-a261-d987d54bac09}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

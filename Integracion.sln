@@ -1,19 +1,25 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2005
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{CC1E2ECA-7E3B-47E9-A261-D987D54BAC09}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccesSQL", "DataAccesSQL\DataAccesSQL.csproj", "{2F9C0469-0F97-4EB7-8179-265CD74398FD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestConsole", "TestConsole\TestConsole.csproj", "{ECFE724A-2CBC-4D39-96C4-EAE1C4ABBDEC}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2B3B2D85-BE86-45B6-A260-E670CDBC3C31} = {2B3B2D85-BE86-45B6-A260-E670CDBC3C31}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccesOracle", "DataAccesOracle\DataAccesOracle.csproj", "{57EA86CF-9C68-4646-AEE6-BC22F3850705}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WS_SOAP", "WS_SOAP\WS_SOAP.csproj", "{2B3B2D85-BE86-45B6-A260-E670CDBC3C31}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vista", "Vista\Vista.csproj", "{AA369674-1C2C-498C-9FCA-4643CDE0BAD8}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2B3B2D85-BE86-45B6-A260-E670CDBC3C31} = {2B3B2D85-BE86-45B6-A260-E670CDBC3C31}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -48,5 +54,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {03540FF1-4DD1-434B-AAE1-3B8A9768AD96}
 	EndGlobalSection
 EndGlobal

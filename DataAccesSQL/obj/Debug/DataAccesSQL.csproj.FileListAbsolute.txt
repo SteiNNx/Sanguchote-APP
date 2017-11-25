@@ -5,3 +5,11 @@ c:\users\duoc\documents\visual studio 2015\Projects\Integracion\DataAccesSQL\bin
 c:\users\duoc\documents\visual studio 2015\Projects\Integracion\DataAccesSQL\obj\Debug\DataAccesSQL.csprojResolveAssemblyReference.cache
 c:\users\duoc\documents\visual studio 2015\Projects\Integracion\DataAccesSQL\obj\Debug\DataAccesSQL.dll
 c:\users\duoc\documents\visual studio 2015\Projects\Integracion\DataAccesSQL\obj\Debug\DataAccesSQL.pdb
+C:\Users\SteinnxLabs\Documents\Visual Studio 2017\Proyects\C-\DataAccesSQL\bin\Debug\DataAccesSQL.dll
+C:\Users\SteinnxLabs\Documents\Visual Studio 2017\Proyects\C-\DataAccesSQL\bin\Debug\DataAccesSQL.pdb
+C:\Users\SteinnxLabs\Documents\Visual Studio 2017\Proyects\C-\DataAccesSQL\bin\Debug\Model.dll
+C:\Users\SteinnxLabs\Documents\Visual Studio 2017\Proyects\C-\DataAccesSQL\bin\Debug\Model.pdb
+C:\Users\SteinnxLabs\Documents\Visual Studio 2017\Proyects\C-\DataAccesSQL\obj\Debug\DataAccesSQL.csprojResolveAssemblyReference.cache
+C:\Users\SteinnxLabs\Documents\Visual Studio 2017\Proyects\C-\DataAccesSQL\obj\Debug\DataAccesSQL.csproj.CoreCompileInputs.cache
+C:\Users\SteinnxLabs\Documents\Visual Studio 2017\Proyects\C-\DataAccesSQL\obj\Debug\DataAccesSQL.dll
+C:\Users\SteinnxLabs\Documents\Visual Studio 2017\Proyects\C-\DataAccesSQL\obj\Debug\DataAccesSQL.pdb

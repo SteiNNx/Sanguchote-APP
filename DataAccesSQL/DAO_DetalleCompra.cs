@@ -72,7 +72,8 @@ namespace DataAccesSQL
             bool resp = false;
             try
             {
-                string sql = "INSERT INTO DetalleCompra VALUES("+det.Compra.Id_compra+","+det.Producto.Id_producto+","+det.Cantidad+")";
+                DAO_Compra dao = new DAO_Compra();
+                string sql = "INSERT INTO DetalleCompra VALUES("+dao.maxIdCompra()+","+det.Producto.Id_producto+","+det.Cantidad+")";
                 if (cone.State != System.Data.ConnectionState.Open) { cone.Open(); }
                 SqlCommand cmd = new SqlCommand(sql, cone);
                 int cant = cmd.ExecuteNonQuery();

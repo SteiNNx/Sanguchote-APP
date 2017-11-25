@@ -6,3 +6,17 @@ c:\users\duoc\documents\visual studio 2015\Projects\Integracion\Vista\obj\Debug\
 c:\users\duoc\documents\visual studio 2015\Projects\Integracion\Vista\obj\Debug\Vista.csproj.GenerateResource.Cache
 c:\users\duoc\documents\visual studio 2015\Projects\Integracion\Vista\obj\Debug\Vista.exe
 c:\users\duoc\documents\visual studio 2015\Projects\Integracion\Vista\obj\Debug\Vista.pdb
+C:\Users\SteinnxLabs\Documents\Visual Studio 2017\Proyects\C-\Vista\bin\Debug\Vista.exe.config
+C:\Users\SteinnxLabs\Documents\Visual Studio 2017\Proyects\C-\Vista\bin\Debug\Vista.exe
+C:\Users\SteinnxLabs\Documents\Visual Studio 2017\Proyects\C-\Vista\bin\Debug\Vista.pdb
+C:\Users\SteinnxLabs\Documents\Visual Studio 2017\Proyects\C-\Vista\obj\Debug\Vista.csprojResolveAssemblyReference.cache
+C:\Users\SteinnxLabs\Documents\Visual Studio 2017\Proyects\C-\Vista\obj\Debug\Vista.frm_Login.resources
+C:\Users\SteinnxLabs\Documents\Visual Studio 2017\Proyects\C-\Vista\obj\Debug\Vista.Properties.Resources.resources
+C:\Users\SteinnxLabs\Documents\Visual Studio 2017\Proyects\C-\Vista\obj\Debug\Vista.csproj.GenerateResource.Cache
+C:\Users\SteinnxLabs\Documents\Visual Studio 2017\Proyects\C-\Vista\obj\Debug\Vista.csproj.CoreCompileInputs.cache
+C:\Users\SteinnxLabs\Documents\Visual Studio 2017\Proyects\C-\Vista\obj\Debug\Vista.exe
+C:\Users\SteinnxLabs\Documents\Visual Studio 2017\Proyects\C-\Vista\obj\Debug\Vista.pdb
+C:\Users\SteinnxLabs\Documents\Visual Studio 2017\Proyects\C-\Vista\bin\Debug\Model.dll
+C:\Users\SteinnxLabs\Documents\Visual Studio 2017\Proyects\C-\Vista\bin\Debug\Model.pdb
+C:\Users\SteinnxLabs\Documents\Visual Studio 2017\Proyects\C-\Vista\obj\Debug\Vista.frm_Home.resources
+C:\Users\SteinnxLabs\Documents\Visual Studio 2017\Proyects\C-\Vista\obj\Debug\Vista.frm_Pedido.resources

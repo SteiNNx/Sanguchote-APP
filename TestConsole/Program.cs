@@ -22,6 +22,45 @@ namespace TestConsole
             //TestInsertarComprar();
 
             //TestListarDetalleCompraPorId(1);
+
+            //TestInsertarCompraWS();
+
+            //TestInsertarDetalleCompraWS();
+
+            //TestListarProductosWS();
+        }
+
+        private static void TestListarProductosWS()
+        {
+            ServiceReference1.Service1Client serv = new ServiceReference1.Service1Client();
+            foreach (CL_Producto item in serv.listaProductos())
+            {
+                Console.WriteLine("Nombre Producto: " + item.Nombre_producto);
+            }
+            Console.ReadKey();
+        }
+
+        private static void TestInsertarDetalleCompraWS()
+        {
+            ServiceReference1.Service1Client serv = new ServiceReference1.Service1Client();
+            CL_Producto pro = new CL_Producto();
+            pro.Id_producto = 3;
+            CL_DetalleCompra det = new CL_DetalleCompra();
+            det.Producto = pro;
+            det.Cantidad = 11;
+            serv.insertarDetalleCompra(Util.SerializeDetalleCompra<CL_DetalleCompra>(det));
+        }
+
+        private static void TestInsertarCompraWS()
+        {
+            ServiceReference1.Service1Client serv = new ServiceReference1.Service1Client();
+            CL_Compra comp = new CL_Compra();
+            CL_Usuario us = new CL_Usuario();
+            us.Id_usuario = 1;
+            comp.Usuario = us;
+            comp.Total_Pago = 100;
+            comp.Fecha_compra = "2017-11-24";
+            serv.insertarCompra(Util.SerializeCompra<CL_Compra>(comp));
         }
 
         private static void TestListarDetalleCompraPorId(int id_compra)
