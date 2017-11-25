@@ -40,14 +40,14 @@
             // 
             this.Panel_Datos.Location = new System.Drawing.Point(12, 147);
             this.Panel_Datos.Name = "Panel_Datos";
-            this.Panel_Datos.Size = new System.Drawing.Size(680, 269);
+            this.Panel_Datos.Size = new System.Drawing.Size(750, 301);
             this.Panel_Datos.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft New Tai Lue", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(13, 419);
+            this.label1.Location = new System.Drawing.Point(12, 451);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(91, 17);
             this.label1.TabIndex = 1;
@@ -58,14 +58,14 @@
             this.pictureBox1.Image = global::Vista.Properties.Resources.logo2;
             this.pictureBox1.Location = new System.Drawing.Point(12, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(360, 75);
+            this.pictureBox1.Size = new System.Drawing.Size(395, 90);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
             // btn_pedido
             // 
-            this.btn_pedido.Location = new System.Drawing.Point(595, 94);
+            this.btn_pedido.Location = new System.Drawing.Point(665, 94);
             this.btn_pedido.Name = "btn_pedido";
             this.btn_pedido.Size = new System.Drawing.Size(97, 47);
             this.btn_pedido.TabIndex = 3;
@@ -75,19 +75,20 @@
             // 
             // btn_compras
             // 
-            this.btn_compras.Location = new System.Drawing.Point(492, 94);
+            this.btn_compras.Location = new System.Drawing.Point(562, 94);
             this.btn_compras.Name = "btn_compras";
             this.btn_compras.Size = new System.Drawing.Size(97, 47);
             this.btn_compras.TabIndex = 4;
             this.btn_compras.Text = "Compras";
             this.btn_compras.UseVisualStyleBackColor = true;
+            this.btn_compras.Click += new System.EventHandler(this.btn_compras_Click);
             // 
             // frm_Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(24)))), ((int)(((byte)(34)))));
-            this.ClientSize = new System.Drawing.Size(704, 444);
+            this.ClientSize = new System.Drawing.Size(774, 477);
             this.Controls.Add(this.btn_compras);
             this.Controls.Add(this.btn_pedido);
             this.Controls.Add(this.pictureBox1);

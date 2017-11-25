@@ -53,6 +53,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="frm_ListarCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ListarCompra.Designer.cs">
+      <DependentUpon>frm_ListarCompra.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +79,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frm_ListarCompra.resx">
+      <DependentUpon>frm_ListarCompra.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_Login.resx">
       <DependentUpon>frm_Login.cs</DependentUpon>
     </EmbeddedResource>

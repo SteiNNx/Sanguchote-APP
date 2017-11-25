@@ -19,9 +19,23 @@ namespace Vista
         public frm_Pedido()
         {
             InitializeComponent();
-
             llenarCombobox();
             llenarCampos();
+            if (Util.data!=null)
+            {
+                llenarGrid();
+            }
+            else { lbl_total.Text = ""; }
+            
+        }
+
+        private void llenarGrid()
+        {
+            aux_data = Util.data;
+            BindingSource bs_datos = new BindingSource();
+            bs_datos.DataSource = aux_data;
+            dgv_pedido.DataSource = bs_datos;
+            lbl_total.Text = precioTotal().ToString();
         }
 
         private void llenarCampos()
@@ -83,6 +97,18 @@ namespace Vista
                     aux_data = Util.data;
                 }
                 DataRow dr = aux_data.NewRow();
+
+                foreach (DataGridViewRow item in dgv_pedido.Rows)
+                {
+                    if (Convert.ToInt32(item.Cells[0].Value) == Convert.ToInt32(cbb_producto.SelectedValue))
+                    {
+                        item.Cells[0].Value = cbb_producto.SelectedValue;
+                        item.Cells[1].Value = cbb_producto.Text;
+                        item.Cells[2].Value = lbl_precio.Text;
+                        item.Cells[3].Value = Convert.ToInt32(ccb_cantidad.Text) + Convert.ToInt32(item.Cells[3].Value);
+                        return;
+                    }
+                }
                 dr["ID"] =cbb_producto.SelectedValue;
                 dr["Nombre"] =cbb_producto.Text;
                 dr["Precio"] =lbl_precio.Text;
@@ -92,6 +118,7 @@ namespace Vista
                 BindingSource bs_datos = new BindingSource();
                 bs_datos.DataSource = aux_data;
                 dgv_pedido.DataSource = bs_datos;
+                lbl_total.Text = precioTotal().ToString();
             }
             catch (Exception ex)
             {
@@ -102,7 +129,60 @@ namespace Vista
 
         private void btn_finalizar_Click(object sender, EventArgs e)
         {
+            try
+            {
+                CL_Compra comp = new CL_Compra();
+                comp.Usuario = Util.usuario;
+                comp.Fecha_compra = DateTime.Now.ToString("yyyy/MM/dd");
+                int precio = precioTotal();
+                comp.Total_Pago = precio;
+                string xmlCompra = Util.SerializeCompra<CL_Compra>(comp);
+                MessageBox.Show(xmlCompra);
+                bool resp = serv.insertarCompra(xmlCompra);
+                if (resp)
+                {
+                    List<CL_DetalleCompra> listaDetalle = new List<CL_DetalleCompra>();
+                    foreach (DataGridViewRow item in dgv_pedido.Rows)
+                    {
+                        if (Convert.ToInt32(item.Cells[0].Value)!=0)
+                        {
+                            CL_DetalleCompra det = new CL_DetalleCompra();
+                            CL_Producto pro = new CL_Producto();
+                            pro.Id_producto = Convert.ToInt32(item.Cells[0].Value);
+                            det.Producto = pro;
+                            det.Cantidad = Convert.ToInt32(item.Cells[3].Value);
+                            listaDetalle.Add(det);
+                        }
+                    }
 
+                    foreach (CL_DetalleCompra item2 in listaDetalle)
+                    {
+                        string xmlDetalle = Util.SerializeDetalleCompra<CL_DetalleCompra>(item2);
+                        serv.insertarDetalleCompra(xmlDetalle);
+                    }
+                    lbl_mensaje.Text = "Pedido Exitoso";
+
+                }else
+                {
+                    lbl_mensaje.Text = "Pedido no Exitoso, Intentelo Mas Tarde";
+                }
+
+            }
+            catch (Exception ex)
+            {
+
+                throw new Exception(ex.Message);
+            }
+        }
+
+        private int precioTotal()
+        {
+            int precio = 0;
+            foreach (DataGridViewRow item in dgv_pedido.Rows)
+            {
+                precio += Convert.ToInt32(item.Cells[2].Value) * Convert.ToInt32(item.Cells[3].Value);
+            }
+            return precio;
         }
     }
 }

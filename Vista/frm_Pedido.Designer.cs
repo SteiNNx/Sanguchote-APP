@@ -40,6 +40,9 @@
             this.btn_finalizar = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.ccb_cantidad = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.lbl_total = new System.Windows.Forms.Label();
+            this.lbl_mensaje = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_pedido)).BeginInit();
             this.SuspendLayout();
@@ -107,9 +110,9 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.dgv_pedido);
-            this.groupBox1.Location = new System.Drawing.Point(303, 34);
+            this.groupBox1.Location = new System.Drawing.Point(280, 34);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(365, 223);
+            this.groupBox1.Size = new System.Drawing.Size(452, 215);
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Pedido";
@@ -119,12 +122,12 @@
             this.dgv_pedido.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_pedido.Location = new System.Drawing.Point(6, 19);
             this.dgv_pedido.Name = "dgv_pedido";
-            this.dgv_pedido.Size = new System.Drawing.Size(353, 198);
+            this.dgv_pedido.Size = new System.Drawing.Size(442, 187);
             this.dgv_pedido.TabIndex = 0;
             // 
             // btn_agregar
             // 
-            this.btn_agregar.Location = new System.Drawing.Point(29, 182);
+            this.btn_agregar.Location = new System.Drawing.Point(29, 259);
             this.btn_agregar.Name = "btn_agregar";
             this.btn_agregar.Size = new System.Drawing.Size(80, 30);
             this.btn_agregar.TabIndex = 10;
@@ -134,7 +137,7 @@
             // 
             // btn_finalizar
             // 
-            this.btn_finalizar.Location = new System.Drawing.Point(29, 227);
+            this.btn_finalizar.Location = new System.Drawing.Point(652, 259);
             this.btn_finalizar.Name = "btn_finalizar";
             this.btn_finalizar.Size = new System.Drawing.Size(80, 30);
             this.btn_finalizar.TabIndex = 11;
@@ -161,12 +164,44 @@
             this.ccb_cantidad.Size = new System.Drawing.Size(140, 21);
             this.ccb_cantidad.TabIndex = 13;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("FrankRuehl", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(26, 223);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(107, 17);
+            this.label5.TabIndex = 14;
+            this.label5.Text = "Precio Pedido: ";
+            // 
+            // lbl_total
+            // 
+            this.lbl_total.AutoSize = true;
+            this.lbl_total.Font = new System.Drawing.Font("FrankRuehl", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_total.Location = new System.Drawing.Point(146, 223);
+            this.lbl_total.Name = "lbl_total";
+            this.lbl_total.Size = new System.Drawing.Size(107, 17);
+            this.lbl_total.TabIndex = 15;
+            this.lbl_total.Text = "Precio Pedido: ";
+            // 
+            // lbl_mensaje
+            // 
+            this.lbl_mensaje.AutoSize = true;
+            this.lbl_mensaje.Font = new System.Drawing.Font("FrankRuehl", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_mensaje.Location = new System.Drawing.Point(283, 268);
+            this.lbl_mensaje.Name = "lbl_mensaje";
+            this.lbl_mensaje.Size = new System.Drawing.Size(0, 17);
+            this.lbl_mensaje.TabIndex = 16;
+            // 
             // frm_Pedido
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(24)))), ((int)(((byte)(34)))));
-            this.ClientSize = new System.Drawing.Size(680, 269);
+            this.ClientSize = new System.Drawing.Size(750, 301);
+            this.Controls.Add(this.lbl_mensaje);
+            this.Controls.Add(this.lbl_total);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.ccb_cantidad);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btn_finalizar);
@@ -202,5 +237,8 @@
         private System.Windows.Forms.Button btn_finalizar;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox ccb_cantidad;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lbl_total;
+        private System.Windows.Forms.Label lbl_mensaje;
     }
 }

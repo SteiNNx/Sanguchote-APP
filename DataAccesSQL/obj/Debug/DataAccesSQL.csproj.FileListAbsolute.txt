@@ -13,3 +13,10 @@ C:\Users\SteinnxLabs\Documents\Visual Studio 2017\Proyects\C-\DataAccesSQL\obj\D
 C:\Users\SteinnxLabs\Documents\Visual Studio 2017\Proyects\C-\DataAccesSQL\obj\Debug\DataAccesSQL.csproj.CoreCompileInputs.cache
 C:\Users\SteinnxLabs\Documents\Visual Studio 2017\Proyects\C-\DataAccesSQL\obj\Debug\DataAccesSQL.dll
 C:\Users\SteinnxLabs\Documents\Visual Studio 2017\Proyects\C-\DataAccesSQL\obj\Debug\DataAccesSQL.pdb
+D:\C-\DataAccesSQL\bin\Debug\DataAccesSQL.dll
+D:\C-\DataAccesSQL\bin\Debug\DataAccesSQL.pdb
+D:\C-\DataAccesSQL\bin\Debug\Model.dll
+D:\C-\DataAccesSQL\bin\Debug\Model.pdb
+D:\C-\DataAccesSQL\obj\Debug\DataAccesSQL.csprojResolveAssemblyReference.cache
+D:\C-\DataAccesSQL\obj\Debug\DataAccesSQL.dll
+D:\C-\DataAccesSQL\obj\Debug\DataAccesSQL.pdb

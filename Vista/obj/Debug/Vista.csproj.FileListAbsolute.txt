@@ -20,3 +20,17 @@ C:\Users\SteinnxLabs\Documents\Visual Studio 2017\Proyects\C-\Vista\bin\Debug\Mo
 C:\Users\SteinnxLabs\Documents\Visual Studio 2017\Proyects\C-\Vista\bin\Debug\Model.pdb
 C:\Users\SteinnxLabs\Documents\Visual Studio 2017\Proyects\C-\Vista\obj\Debug\Vista.frm_Home.resources
 C:\Users\SteinnxLabs\Documents\Visual Studio 2017\Proyects\C-\Vista\obj\Debug\Vista.frm_Pedido.resources
+D:\C-\Vista\bin\Debug\Vista.exe.config
+D:\C-\Vista\obj\Debug\Vista.exe
+D:\C-\Vista\obj\Debug\Vista.pdb
+D:\C-\Vista\bin\Debug\Vista.exe
+D:\C-\Vista\bin\Debug\Vista.pdb
+D:\C-\Vista\bin\Debug\Model.dll
+D:\C-\Vista\bin\Debug\Model.pdb
+D:\C-\Vista\obj\Debug\Vista.csprojResolveAssemblyReference.cache
+D:\C-\Vista\obj\Debug\Vista.frm_Login.resources
+D:\C-\Vista\obj\Debug\Vista.frm_Home.resources
+D:\C-\Vista\obj\Debug\Vista.frm_Pedido.resources
+D:\C-\Vista\obj\Debug\Vista.Properties.Resources.resources
+D:\C-\Vista\obj\Debug\Vista.csproj.GenerateResource.Cache
+D:\C-\Vista\obj\Debug\Vista.frm_ListarCompra.resources

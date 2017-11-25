@@ -30,6 +30,7 @@ namespace Vista
             {
                 this.Hide();
                 frm_Home home = new frm_Home();
+                Util.usuario = user;
                 home.Show();
             }
             else

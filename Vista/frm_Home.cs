@@ -15,30 +15,25 @@ namespace Vista
         public frm_Home()
         {
             InitializeComponent();
-        }
-
-
-        private void LlamarMenuCRUD(string nombreBoton)
-        {
-            /*Panel_Datos.Controls.Clear();
-            MenuCRUD menu = new MenuCRUD(nombreBoton)
-            {
-                TopLevel = false,
-                FormBorderStyle = FormBorderStyle.None,
-                Dock = DockStyle.Fill
-
-            };
-            Panel_Datos.Controls.Add(menu);
-            menu.Show();*/
+            insertarPanel(new frm_Pedido());
         }
 
         private void btn_pedido_Click(object sender, EventArgs e)
         {
+            insertarPanel(new frm_Pedido());
+        }
+
+        private void insertarPanel(Form nuevo_forms)
+        {
             Panel_Datos.Controls.Clear();
-            frm_Pedido ped = new frm_Pedido();
-            ped.TopLevel = false;
-            Panel_Datos.Controls.Add(ped);
-            ped.Show();
+            nuevo_forms.TopLevel = false;
+            Panel_Datos.Controls.Add(nuevo_forms);
+            nuevo_forms.Show();
+        }
+
+        private void btn_compras_Click(object sender, EventArgs e)
+        {
+            insertarPanel(new frm_ListarCompra());
         }
     }
 }
