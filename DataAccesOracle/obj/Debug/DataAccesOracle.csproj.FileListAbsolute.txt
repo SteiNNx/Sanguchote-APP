@@ -20,3 +20,5 @@ D:\C-\DataAccesOracle\bin\Debug\Oracle.ManagedDataAccess.dll
 D:\C-\DataAccesOracle\obj\Debug\DataAccesOracle.csprojResolveAssemblyReference.cache
 D:\C-\DataAccesOracle\obj\Debug\DataAccesOracle.dll
 D:\C-\DataAccesOracle\obj\Debug\DataAccesOracle.pdb
+C:\Users\SteinnxLabs\Documents\Visual Studio 2017\Proyects\C-\DataAccesOracle\bin\Debug\Model.dll
+C:\Users\SteinnxLabs\Documents\Visual Studio 2017\Proyects\C-\DataAccesOracle\bin\Debug\Model.pdb

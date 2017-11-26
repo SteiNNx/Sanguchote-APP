@@ -33,6 +33,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_pedido = new System.Windows.Forms.Button();
             this.btn_compras = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -65,23 +66,36 @@
             // 
             // btn_pedido
             // 
+            this.btn_pedido.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(116)))), ((int)(((byte)(10)))));
             this.btn_pedido.Location = new System.Drawing.Point(665, 94);
             this.btn_pedido.Name = "btn_pedido";
             this.btn_pedido.Size = new System.Drawing.Size(97, 47);
             this.btn_pedido.TabIndex = 3;
             this.btn_pedido.Text = "Pedido";
-            this.btn_pedido.UseVisualStyleBackColor = true;
+            this.btn_pedido.UseVisualStyleBackColor = false;
             this.btn_pedido.Click += new System.EventHandler(this.btn_pedido_Click);
             // 
             // btn_compras
             // 
+            this.btn_compras.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(116)))), ((int)(((byte)(10)))));
             this.btn_compras.Location = new System.Drawing.Point(562, 94);
             this.btn_compras.Name = "btn_compras";
             this.btn_compras.Size = new System.Drawing.Size(97, 47);
             this.btn_compras.TabIndex = 4;
             this.btn_compras.Text = "Compras";
-            this.btn_compras.UseVisualStyleBackColor = true;
+            this.btn_compras.UseVisualStyleBackColor = false;
             this.btn_compras.Click += new System.EventHandler(this.btn_compras_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(116)))), ((int)(((byte)(10)))));
+            this.button1.Location = new System.Drawing.Point(459, 94);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(97, 47);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "Oracle Compras";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // frm_Home
             // 
@@ -89,6 +103,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(24)))), ((int)(((byte)(34)))));
             this.ClientSize = new System.Drawing.Size(774, 477);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btn_compras);
             this.Controls.Add(this.btn_pedido);
             this.Controls.Add(this.pictureBox1);
@@ -110,5 +125,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btn_pedido;
         private System.Windows.Forms.Button btn_compras;
+        private System.Windows.Forms.Button button1;
     }
 }

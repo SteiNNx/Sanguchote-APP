@@ -50,6 +50,18 @@ namespace TestConsole.ServiceReference1 {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/listaDetalleCompraXIdCompra", ReplyAction="http://tempuri.org/IService1/listaDetalleCompraXIdCompraResponse")]
         System.Threading.Tasks.Task<Model.CL_DetalleCompra[]> listaDetalleCompraXIdCompraAsync(int cod);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/insertarRegistrarVentas", ReplyAction="http://tempuri.org/IService1/insertarRegistrarVentasResponse")]
+        bool insertarRegistrarVentas(string xmlRegistrarVenta);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/insertarRegistrarVentas", ReplyAction="http://tempuri.org/IService1/insertarRegistrarVentasResponse")]
+        System.Threading.Tasks.Task<bool> insertarRegistrarVentasAsync(string xmlRegistrarVenta);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/listaRegistrarVentas", ReplyAction="http://tempuri.org/IService1/listaRegistrarVentasResponse")]
+        Model.CL_RegistrarVentas[] listaRegistrarVentas();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/listaRegistrarVentas", ReplyAction="http://tempuri.org/IService1/listaRegistrarVentasResponse")]
+        System.Threading.Tasks.Task<Model.CL_RegistrarVentas[]> listaRegistrarVentasAsync();
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -125,6 +137,22 @@ namespace TestConsole.ServiceReference1 {
         
         public System.Threading.Tasks.Task<Model.CL_DetalleCompra[]> listaDetalleCompraXIdCompraAsync(int cod) {
             return base.Channel.listaDetalleCompraXIdCompraAsync(cod);
+        }
+        
+        public bool insertarRegistrarVentas(string xmlRegistrarVenta) {
+            return base.Channel.insertarRegistrarVentas(xmlRegistrarVenta);
+        }
+        
+        public System.Threading.Tasks.Task<bool> insertarRegistrarVentasAsync(string xmlRegistrarVenta) {
+            return base.Channel.insertarRegistrarVentasAsync(xmlRegistrarVenta);
+        }
+        
+        public Model.CL_RegistrarVentas[] listaRegistrarVentas() {
+            return base.Channel.listaRegistrarVentas();
+        }
+        
+        public System.Threading.Tasks.Task<Model.CL_RegistrarVentas[]> listaRegistrarVentasAsync() {
+            return base.Channel.listaRegistrarVentasAsync();
         }
     }
 }

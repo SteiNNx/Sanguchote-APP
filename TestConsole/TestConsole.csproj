@@ -68,9 +68,14 @@
     <None Include="Properties\DataSources\Model.CL_Compra.datasource" />
     <None Include="Properties\DataSources\Model.CL_DetalleCompra.datasource" />
     <None Include="Properties\DataSources\Model.CL_Producto.datasource" />
+    <None Include="Properties\DataSources\Model.CL_RegistrarVentas.datasource" />
     <None Include="Properties\DataSources\Model.CL_Usuario.datasource" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DataAccesOracle\DataAccesOracle.csproj">
+      <Project>{57ea86cf-9c68-4646-aee6-bc22f3850705}</Project>
+      <Name>DataAccesOracle</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DataAccesSQL\DataAccesSQL.csproj">
       <Project>{2f9c0469-0f97-4eb7-8179-265cd74398fd}</Project>
       <Name>DataAccesSQL</Name>

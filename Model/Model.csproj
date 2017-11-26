@@ -43,6 +43,7 @@
     <Compile Include="CL_Compra.cs" />
     <Compile Include="CL_DetalleCompra.cs" />
     <Compile Include="CL_Producto.cs" />
+    <Compile Include="CL_RegistrarVentas.cs" />
     <Compile Include="CL_Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Util.cs" />

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 using Model;
 using DataAccesSQL;
+using DataAccesOracle;
 
 namespace TestConsole
 {
@@ -28,6 +29,46 @@ namespace TestConsole
             //TestInsertarDetalleCompraWS();
 
             //TestListarProductosWS();
+
+            //TestInsertarRegistroVentaOracle();
+
+            //TestListarRegistroVentasOracle();
+
+            //TestListarRegistroVentasOracleWS();
+        }
+
+        private static void TestListarRegistroVentasOracleWS()
+        {
+            ServiceReference1.Service1Client service = new ServiceReference1.Service1Client();
+            foreach (CL_RegistrarVentas item in service.listaRegistrarVentas())
+            {
+                Console.WriteLine("Id Compra " + item.id_compra);
+                Console.WriteLine("Total " + item.total);
+                Console.WriteLine("Propina " + item.propitna);
+            }
+            Console.ReadKey();
+        }
+
+        private static void TestListarRegistroVentasOracle()
+        {
+            foreach (CL_RegistrarVentas item in new DAO_RegistrarVentas().obtenerListadoRegistrarVentas())
+            {
+                Console.WriteLine("Id Compra "+item.id_compra);
+                Console.WriteLine("Total "+item.total);
+                Console.WriteLine("Propina " + item.propitna);
+            }
+            Console.ReadKey();
+        }
+
+        private static void TestInsertarRegistroVentaOracle()
+        {
+            CL_RegistrarVentas ventas = new CL_RegistrarVentas();
+            ventas.id_compra = 2;
+            ventas.total = 100;
+            ventas.propitna = 10;
+            DAO_RegistrarVentas dao = new DAO_RegistrarVentas();
+            dao.insertarRegistrar(ventas);
+
         }
 
         private static void TestListarProductosWS()

@@ -69,3 +69,4 @@ D:\C-\WS_SOAP\bin\Microsoft.ApplicationInsights.xml
 D:\C-\WS_SOAP\obj\Debug\WS_SOAP.csprojResolveAssemblyReference.cache
 D:\C-\WS_SOAP\obj\Debug\WS_SOAP.dll
 D:\C-\WS_SOAP\obj\Debug\WS_SOAP.pdb
+C:\Users\SteinnxLabs\Documents\Visual Studio 2017\Proyects\C-\WS_SOAP\bin\Oracle.ManagedDataAccess.dll

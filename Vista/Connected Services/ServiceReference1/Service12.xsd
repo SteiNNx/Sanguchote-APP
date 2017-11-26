@@ -56,4 +56,19 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="CL_DetalleCompra" nillable="true" type="tns:CL_DetalleCompra" />
+  <xs:complexType name="ArrayOfCL_RegistrarVentas">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CL_RegistrarVentas" nillable="true" type="tns:CL_RegistrarVentas" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCL_RegistrarVentas" nillable="true" type="tns:ArrayOfCL_RegistrarVentas" />
+  <xs:complexType name="CL_RegistrarVentas">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="id_compra" type="xs:int" />
+      <xs:element minOccurs="0" name="id_registrar" type="xs:int" />
+      <xs:element minOccurs="0" name="propitna" type="xs:int" />
+      <xs:element minOccurs="0" name="total" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CL_RegistrarVentas" nillable="true" type="tns:CL_RegistrarVentas" />
 </xs:schema>

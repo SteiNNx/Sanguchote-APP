@@ -59,6 +59,12 @@
     <Compile Include="frm_ListarCompra.Designer.cs">
       <DependentUpon>frm_ListarCompra.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_ListarComprasOracle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ListarComprasOracle.Designer.cs">
+      <DependentUpon>frm_ListarComprasOracle.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +87,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frm_ListarCompra.resx">
       <DependentUpon>frm_ListarCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ListarComprasOracle.resx">
+      <DependentUpon>frm_ListarComprasOracle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_Login.resx">
       <DependentUpon>frm_Login.cs</DependentUpon>
@@ -115,6 +124,7 @@
     <None Include="Properties\DataSources\Model.CL_Compra.datasource" />
     <None Include="Properties\DataSources\Model.CL_DetalleCompra.datasource" />
     <None Include="Properties\DataSources\Model.CL_Producto.datasource" />
+    <None Include="Properties\DataSources\Model.CL_RegistrarVentas.datasource" />
     <None Include="Properties\DataSources\Model.CL_Usuario.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -147,6 +157,14 @@
     <WCFMetadataStorage Include="Connected Services\ServiceReference1\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DataAccesOracle\DataAccesOracle.csproj">
+      <Project>{57ea86cf-9c68-4646-aee6-bc22f3850705}</Project>
+      <Name>DataAccesOracle</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccesSQL\DataAccesSQL.csproj">
+      <Project>{2f9c0469-0f97-4eb7-8179-265cd74398fd}</Project>
+      <Name>DataAccesSQL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Model\Model.csproj">
       <Project>{cc1e2eca-7e3b-47e9-a261-d987d54bac09}</Project>
       <Name>Model</Name>

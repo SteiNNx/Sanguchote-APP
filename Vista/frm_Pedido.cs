@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 using Model;
+using DataAccesSQL;
 
 namespace Vista
 {
@@ -122,7 +123,6 @@ namespace Vista
             }
             catch (Exception ex)
             {
-
                 throw new Exception(ex.Message);
             }
         }
@@ -131,42 +131,56 @@ namespace Vista
         {
             try
             {
-                CL_Compra comp = new CL_Compra();
-                comp.Usuario = Util.usuario;
-                comp.Fecha_compra = DateTime.Now.ToString("yyyy/MM/dd");
-                int precio = precioTotal();
-                comp.Total_Pago = precio;
-                string xmlCompra = Util.SerializeCompra<CL_Compra>(comp);
-                MessageBox.Show(xmlCompra);
-                bool resp = serv.insertarCompra(xmlCompra);
-                if (resp)
+                if (dgv_pedido.Rows.Count!=0)
                 {
-                    List<CL_DetalleCompra> listaDetalle = new List<CL_DetalleCompra>();
-                    foreach (DataGridViewRow item in dgv_pedido.Rows)
+                    CL_Compra comp = new CL_Compra();
+                    comp.Usuario = Util.usuario;
+                    comp.Fecha_compra = DateTime.Now.ToString("yyyy/MM/dd");
+                    int precio = precioTotal();
+                    comp.Total_Pago = precio;
+                    string xmlCompra = Util.SerializeCompra<CL_Compra>(comp);
+                    MessageBox.Show(xmlCompra);
+                    bool resp = serv.insertarCompra(xmlCompra);
+                    if (resp)
                     {
-                        if (Convert.ToInt32(item.Cells[0].Value)!=0)
+                        List<CL_DetalleCompra> listaDetalle = new List<CL_DetalleCompra>();
+                        foreach (DataGridViewRow item in dgv_pedido.Rows)
                         {
-                            CL_DetalleCompra det = new CL_DetalleCompra();
-                            CL_Producto pro = new CL_Producto();
-                            pro.Id_producto = Convert.ToInt32(item.Cells[0].Value);
-                            det.Producto = pro;
-                            det.Cantidad = Convert.ToInt32(item.Cells[3].Value);
-                            listaDetalle.Add(det);
+                            if (Convert.ToInt32(item.Cells[0].Value) != 0)
+                            {
+                                CL_DetalleCompra det = new CL_DetalleCompra();
+                                CL_Producto pro = new CL_Producto();
+                                pro.Id_producto = Convert.ToInt32(item.Cells[0].Value);
+                                det.Producto = pro;
+                                det.Cantidad = Convert.ToInt32(item.Cells[3].Value);
+                                listaDetalle.Add(det);
+                            }
                         }
-                    }
 
-                    foreach (CL_DetalleCompra item2 in listaDetalle)
+                        foreach (CL_DetalleCompra item2 in listaDetalle)
+                        {
+                            string xmlDetalle = Util.SerializeDetalleCompra<CL_DetalleCompra>(item2);
+                            serv.insertarDetalleCompra(xmlDetalle);
+                        }
+                        CL_RegistrarVentas registrarVentas = new CL_RegistrarVentas();
+                        registrarVentas.id_compra = new DAO_Compra().maxIdCompra();
+                        registrarVentas.total = precioTotal();
+                        registrarVentas.propitna = Convert.ToInt32(Math.Round((precioTotal() * 0.10), 0));
+                        string xmlRegistroCompra = Util.SerializeRegistrarVentas<CL_RegistrarVentas>(registrarVentas);
+                        serv.insertarRegistrarVentas(xmlRegistroCompra);
+                        lbl_mensaje.Text = "Pedido Exitoso";
+                        Util.data = null;
+
+                    }
+                    else
                     {
-                        string xmlDetalle = Util.SerializeDetalleCompra<CL_DetalleCompra>(item2);
-                        serv.insertarDetalleCompra(xmlDetalle);
+                        lbl_mensaje.Text = "Pedido no Exitoso, Intentelo Mas Tarde";
                     }
-                    lbl_mensaje.Text = "Pedido Exitoso";
-
-                }else
-                {
-                    lbl_mensaje.Text = "Pedido no Exitoso, Intentelo Mas Tarde";
                 }
-
+                else
+                {
+                    lbl_mensaje.Text = "Ingrese Productos Al Carrito";
+                }
             }
             catch (Exception ex)
             {

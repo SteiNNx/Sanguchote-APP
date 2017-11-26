@@ -8,6 +8,7 @@ using System.Text;
 
 using Model;
 using DataAccesSQL;
+using DataAccesOracle;
 
 namespace WS_SOAP
 {
@@ -32,7 +33,7 @@ namespace WS_SOAP
             resp = dao.insertarDetalleCompra(aux_det);
             return resp;
         }
-
+        
         public List<CL_Compra> listaCompras()
         {
             return new DAO_Compra().obtenerCompras();
@@ -43,15 +44,28 @@ namespace WS_SOAP
             return new DAO_DetalleCompra().obtenerDetalleCompraXIdCompra(cod);
         }
 
-        public List<CL_Producto> listaProductos()
+        public List<CL_RegistrarVentas> listaRegistrarVentas()
         {
-            return new DAO_Producto().obtenerProductos();
+            return new DAO_RegistrarVentas().obtenerListadoRegistrarVentas();
         }
 
         public CL_Usuario Login(string nom, string pass)
         {
             DAO_Usuario user = new DAO_Usuario();
             return user.login(nom,pass);
+        }
+
+        public bool insertarRegistrarVentas(string xmlRegistrarVenta)
+        {
+            bool resp = false;
+            CL_RegistrarVentas registrarVentas = Util.DeserializeRegistrarVentas<CL_RegistrarVentas>(xmlRegistrarVenta);
+            DAO_RegistrarVentas dao = new DAO_RegistrarVentas();
+            resp = dao.insertarRegistrar(registrarVentas);
+            return resp;
+        }
+        public List<CL_Producto> listaProductos()
+        {
+            return new DAO_Producto().obtenerProductos();
         }
     }
 }

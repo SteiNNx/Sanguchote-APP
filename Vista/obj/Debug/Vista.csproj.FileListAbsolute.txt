@@ -34,3 +34,11 @@ D:\C-\Vista\obj\Debug\Vista.frm_Pedido.resources
 D:\C-\Vista\obj\Debug\Vista.Properties.Resources.resources
 D:\C-\Vista\obj\Debug\Vista.csproj.GenerateResource.Cache
 D:\C-\Vista\obj\Debug\Vista.frm_ListarCompra.resources
+C:\Users\SteinnxLabs\Documents\Visual Studio 2017\Proyects\C-\Vista\obj\Debug\Vista.frm_ListarCompra.resources
+C:\Users\SteinnxLabs\Documents\Visual Studio 2017\Proyects\C-\Vista\bin\Debug\DataAccesOracle.dll
+C:\Users\SteinnxLabs\Documents\Visual Studio 2017\Proyects\C-\Vista\bin\Debug\DataAccesSQL.dll
+C:\Users\SteinnxLabs\Documents\Visual Studio 2017\Proyects\C-\Vista\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\SteinnxLabs\Documents\Visual Studio 2017\Proyects\C-\Vista\bin\Debug\DataAccesOracle.pdb
+C:\Users\SteinnxLabs\Documents\Visual Studio 2017\Proyects\C-\Vista\bin\Debug\DataAccesOracle.dll.config
+C:\Users\SteinnxLabs\Documents\Visual Studio 2017\Proyects\C-\Vista\bin\Debug\DataAccesSQL.pdb
+C:\Users\SteinnxLabs\Documents\Visual Studio 2017\Proyects\C-\Vista\obj\Debug\Vista.frm_ListarComprasOracle.resources

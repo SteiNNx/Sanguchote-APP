@@ -127,22 +127,24 @@
             // 
             // btn_agregar
             // 
+            this.btn_agregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(116)))), ((int)(((byte)(10)))));
             this.btn_agregar.Location = new System.Drawing.Point(29, 259);
             this.btn_agregar.Name = "btn_agregar";
             this.btn_agregar.Size = new System.Drawing.Size(80, 30);
             this.btn_agregar.TabIndex = 10;
             this.btn_agregar.Text = "Agregar";
-            this.btn_agregar.UseVisualStyleBackColor = true;
+            this.btn_agregar.UseVisualStyleBackColor = false;
             this.btn_agregar.Click += new System.EventHandler(this.btn_agregar_Click);
             // 
             // btn_finalizar
             // 
+            this.btn_finalizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(116)))), ((int)(((byte)(10)))));
             this.btn_finalizar.Location = new System.Drawing.Point(652, 259);
             this.btn_finalizar.Name = "btn_finalizar";
             this.btn_finalizar.Size = new System.Drawing.Size(80, 30);
             this.btn_finalizar.TabIndex = 11;
             this.btn_finalizar.Text = "Finalizar";
-            this.btn_finalizar.UseVisualStyleBackColor = true;
+            this.btn_finalizar.UseVisualStyleBackColor = false;
             this.btn_finalizar.Click += new System.EventHandler(this.btn_finalizar_Click);
             // 
             // label4

@@ -27,6 +27,10 @@ namespace WS_SOAP
         bool insertarDetalleCompra(string xmlDetalleCompra);
         [OperationContract]
         List<CL_DetalleCompra> listaDetalleCompraXIdCompra(int cod);
+        [OperationContract]
+        bool insertarRegistrarVentas(string xmlRegistrarVenta);
+        [OperationContract]
+        List<CL_RegistrarVentas> listaRegistrarVentas();
     }
 
 }

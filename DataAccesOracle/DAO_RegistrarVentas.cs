@@ -68,7 +68,12 @@ namespace DataAccesOracle
                 OracleDataReader dr = cmd.ExecuteReader();
                 while (dr.Read())
                 {
-
+                    CL_RegistrarVentas aux_ventas = new CL_RegistrarVentas();
+                    aux_ventas.id_compra = Convert.ToInt32(dr["ID_COMPRA"].ToString());
+                    aux_ventas.id_registrar = Convert.ToInt32(dr["ID_REGISTRO_VENTAS"].ToString());
+                    aux_ventas.propitna = Convert.ToInt32(dr["PROPINA"].ToString());
+                    aux_ventas.total = Convert.ToInt32(dr["TOTAL"].ToString());
+                    lista.Add(aux_ventas);
                 }
             }
             catch (Exception ex)

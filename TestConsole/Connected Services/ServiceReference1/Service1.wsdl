@@ -43,6 +43,18 @@
   <wsdl:message name="IService1_listaDetalleCompraXIdCompra_OutputMessage">
     <wsdl:part name="parameters" element="tns:listaDetalleCompraXIdCompraResponse" />
   </wsdl:message>
+  <wsdl:message name="IService1_insertarRegistrarVentas_InputMessage">
+    <wsdl:part name="parameters" element="tns:insertarRegistrarVentas" />
+  </wsdl:message>
+  <wsdl:message name="IService1_insertarRegistrarVentas_OutputMessage">
+    <wsdl:part name="parameters" element="tns:insertarRegistrarVentasResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_listaRegistrarVentas_InputMessage">
+    <wsdl:part name="parameters" element="tns:listaRegistrarVentas" />
+  </wsdl:message>
+  <wsdl:message name="IService1_listaRegistrarVentas_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listaRegistrarVentasResponse" />
+  </wsdl:message>
   <wsdl:portType name="IService1">
     <wsdl:operation name="Login">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/Login" message="tns:IService1_Login_InputMessage" />
@@ -67,6 +79,14 @@
     <wsdl:operation name="listaDetalleCompraXIdCompra">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/listaDetalleCompraXIdCompra" message="tns:IService1_listaDetalleCompraXIdCompra_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/listaDetalleCompraXIdCompraResponse" message="tns:IService1_listaDetalleCompraXIdCompra_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="insertarRegistrarVentas">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/insertarRegistrarVentas" message="tns:IService1_insertarRegistrarVentas_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/insertarRegistrarVentasResponse" message="tns:IService1_insertarRegistrarVentas_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listaRegistrarVentas">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/listaRegistrarVentas" message="tns:IService1_listaRegistrarVentas_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/listaRegistrarVentasResponse" message="tns:IService1_listaRegistrarVentas_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
@@ -118,6 +138,24 @@
     </wsdl:operation>
     <wsdl:operation name="listaDetalleCompraXIdCompra">
       <soap:operation soapAction="http://tempuri.org/IService1/listaDetalleCompraXIdCompra" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertarRegistrarVentas">
+      <soap:operation soapAction="http://tempuri.org/IService1/insertarRegistrarVentas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listaRegistrarVentas">
+      <soap:operation soapAction="http://tempuri.org/IService1/listaRegistrarVentas" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

@@ -82,4 +82,30 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="insertarRegistrarVentas">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="xmlRegistrarVenta" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="insertarRegistrarVentasResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="insertarRegistrarVentasResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listaRegistrarVentas">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="listaRegistrarVentasResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/Model" minOccurs="0" name="listaRegistrarVentasResult" nillable="true" type="q5:ArrayOfCL_RegistrarVentas" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
 </xs:schema>

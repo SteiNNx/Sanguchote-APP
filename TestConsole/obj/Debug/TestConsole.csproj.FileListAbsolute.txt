@@ -28,3 +28,8 @@ D:\C-\TestConsole\bin\Debug\Model.pdb
 D:\C-\TestConsole\obj\Debug\TestConsole.csprojResolveAssemblyReference.cache
 D:\C-\TestConsole\obj\Debug\TestConsole.exe
 D:\C-\TestConsole\obj\Debug\TestConsole.pdb
+C:\Users\SteinnxLabs\Documents\Visual Studio 2017\Proyects\C-\TestConsole\bin\Debug\DataAccesOracle.dll
+C:\Users\SteinnxLabs\Documents\Visual Studio 2017\Proyects\C-\TestConsole\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\SteinnxLabs\Documents\Visual Studio 2017\Proyects\C-\TestConsole\bin\Debug\DataAccesOracle.pdb
+C:\Users\SteinnxLabs\Documents\Visual Studio 2017\Proyects\C-\TestConsole\bin\Debug\DataAccesOracle.dll.config
+C:\Users\SteinnxLabs\Documents\Visual Studio 2017\Proyects\C-\TestConsole\obj\Debug\TestConsole.csprojResolveAssemblyReference.cache

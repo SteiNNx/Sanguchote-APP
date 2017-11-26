@@ -55,7 +55,27 @@ namespace Model
                 }
             }
         }
+        public static CL_RegistrarVentas DeserializeRegistrarVentas<CL_RegistrarVentas>(string xml)
+        {
 
+            if (string.IsNullOrEmpty(xml))
+            {
+                return default(CL_RegistrarVentas);
+            }
+
+            XmlSerializer serializer = new XmlSerializer(typeof(CL_RegistrarVentas));
+
+            XmlReaderSettings settings = new XmlReaderSettings();
+            // No settings need modifying here
+
+            using (StringReader textReader = new StringReader(xml))
+            {
+                using (XmlReader xmlReader = XmlReader.Create(textReader, settings))
+                {
+                    return (CL_RegistrarVentas)serializer.Deserialize(xmlReader);
+                }
+            }
+        }
         public static string SerializeCompra<CL_Compra>(CL_Compra value)
         {
 
@@ -65,6 +85,32 @@ namespace Model
             }
 
             XmlSerializer serializer = new XmlSerializer(typeof(CL_Compra));
+
+            XmlWriterSettings settings = new XmlWriterSettings()
+            {
+                Encoding = new UnicodeEncoding(false, false), // no BOM in a .NET string
+                Indent = false,
+                OmitXmlDeclaration = false
+            };
+
+            using (StringWriter textWriter = new StringWriter())
+            {
+                using (XmlWriter xmlWriter = XmlWriter.Create(textWriter, settings))
+                {
+                    serializer.Serialize(xmlWriter, value);
+                }
+                return textWriter.ToString();
+            }
+        }
+        public static string SerializeRegistrarVentas<CL_RegistrarVentas>(CL_RegistrarVentas value)
+        {
+
+            if (value == null)
+            {
+                return null;
+            }
+
+            XmlSerializer serializer = new XmlSerializer(typeof(CL_RegistrarVentas));
 
             XmlWriterSettings settings = new XmlWriterSettings()
             {

@@ -14,9 +14,9 @@ namespace DataAccesSQL
         private SqlConnection cone;
 
         //BD DUOC
-        private String cadena = @"Data Source=LC1300429;Initial Catalog=sanguchote; integrated Security =True";
+        //private String cadena = @"Data Source=LC1300429;Initial Catalog=sanguchote; integrated Security =True";
         //BD MI CASA STEINNXLABS-PC\SQLEXPRESS
-        //private String cadena = @"Data Source=STEINNXLABS-PC\SQLEXPRESS;Initial Catalog=sanguchote; integrated Security =True";
+        private String cadena = @"Data Source=STEINNXLABS-PC\SQLEXPRESS;Initial Catalog=sanguchote; integrated Security =True";
 
 
         public CL_Conexion()
