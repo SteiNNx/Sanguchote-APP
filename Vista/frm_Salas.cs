@@ -24,7 +24,14 @@ namespace Vista
             if (Util.dataSala != null)
             {
                 llenarGrid();
+                
             }
+            DataGridViewButtonColumn btnPedido = new DataGridViewButtonColumn();
+            dgv_pedidos.Columns.Add(btnPedido);
+            btnPedido.HeaderText = "Pedido";
+            btnPedido.Text = "Pedido";
+            btnPedido.Name = "btnPedido";
+            btnPedido.UseColumnTextForButtonValue = true;
         }
 
         private void llenarGrid()
@@ -33,6 +40,7 @@ namespace Vista
             BindingSource bs_datos = new BindingSource();
             bs_datos.DataSource = aux_data;
             dgv_pedidos.DataSource = bs_datos;
+            
         }
 
         private void llenarCombobox()
@@ -48,7 +56,42 @@ namespace Vista
 
         private void btn_pedido_Click(object sender, EventArgs e)
         {
-
+            if (Util.dataSala == null)
+            {
+                aux_data = new DataTable();
+                aux_data.Columns.Add("N° Sala");
+                aux_data.Columns.Add("Pedido N°");
+            }
+            else
+            {
+                aux_data = Util.dataSala;
+            }
+            DataRow dr = aux_data.NewRow();
+            dr["N° Sala"] = cbb_sala.Text;
+            dr["Pedido N°"] = Util.getContador();
+            aux_data.Rows.Add(dr);
+            Util.dataSala = aux_data;
+            BindingSource bs_datos = new BindingSource();
+            bs_datos.DataSource = aux_data;
+            dgv_pedidos.DataSource = bs_datos;
         }
+
+        private void dgv_pedidos_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == 0)
+            {
+                if (dgv_pedidos.Rows[e.RowIndex].Cells[2].Value.ToString() != "")
+                {
+                    int id = Convert.ToInt32(dgv_pedidos.Rows[e.RowIndex].Cells[2].Value.ToString());
+                    this.Close();
+                    frm_Pedido ped = new frm_Pedido();
+                    ped.TopLevel = false;
+
+                    
+                    ped.Show();
+                }
+            }
+        }
+        
     }
 }

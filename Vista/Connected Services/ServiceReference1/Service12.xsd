@@ -37,6 +37,8 @@
     <xs:sequence>
       <xs:element minOccurs="0" name="Fecha_compra" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Id_compra" type="xs:int" />
+      <xs:element minOccurs="0" name="NumPedido" type="xs:int" />
+      <xs:element minOccurs="0" name="NumSala" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Total_Pago" type="xs:int" />
       <xs:element minOccurs="0" name="Usuario" nillable="true" type="tns:CL_Usuario" />
     </xs:sequence>

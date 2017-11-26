@@ -40,6 +40,8 @@ namespace DataAccesSQL
                     com.Usuario = user;
                     com.Fecha_compra = Convert.ToDateTime(dr["fecha_compra"].ToString()).ToString("dd/MM/yyyy");
                     com.Total_Pago = Convert.ToInt32(dr["total_pago"].ToString());
+                    com.NumSala = dr["sala"].ToString();
+                    com.NumPedido = Convert.ToInt32(dr["pedido"].ToString());
                     lista.Add(com);
                 }
             }
@@ -61,7 +63,7 @@ namespace DataAccesSQL
             bool resp = false;
             try
             {
-                string sql = "INSERT INTO Compras VALUES (" + comp.Usuario.Id_usuario + ",'" + comp.Fecha_compra + "'," + comp.Total_Pago + ");";
+                string sql = "INSERT INTO Compras VALUES (" + comp.Usuario.Id_usuario + ",'" + comp.Fecha_compra + "'," + comp.Total_Pago + ",'"+comp.NumSala+"',"+comp.NumPedido+");";
                 if (cone.State != System.Data.ConnectionState.Open) { cone.Open(); }
                 SqlCommand cmd = new SqlCommand(sql, cone);
                 int cant = cmd.ExecuteNonQuery();

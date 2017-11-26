@@ -13,6 +13,9 @@ namespace Model
         public string Fecha_compra { get; set; }
         public int Total_Pago { get; set; }
 
+        public int NumPedido{ get; set; }
+        public string NumSala { get; set; }
+
         public CL_Compra()
         {
 

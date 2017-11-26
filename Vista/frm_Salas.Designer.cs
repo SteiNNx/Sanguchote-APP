@@ -41,7 +41,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("FrankRuehl", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(27, 57);
+            this.label1.Location = new System.Drawing.Point(31, 56);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(37, 17);
             this.label1.TabIndex = 3;
@@ -51,16 +51,16 @@
             // 
             this.cbb_sala.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbb_sala.FormattingEnabled = true;
-            this.cbb_sala.Location = new System.Drawing.Point(110, 53);
+            this.cbb_sala.Location = new System.Drawing.Point(151, 53);
             this.cbb_sala.Name = "cbb_sala";
-            this.cbb_sala.Size = new System.Drawing.Size(140, 21);
+            this.cbb_sala.Size = new System.Drawing.Size(146, 21);
             this.cbb_sala.TabIndex = 6;
             // 
             // btn_pedido
             // 
-            this.btn_pedido.Location = new System.Drawing.Point(63, 112);
+            this.btn_pedido.Location = new System.Drawing.Point(198, 252);
             this.btn_pedido.Name = "btn_pedido";
-            this.btn_pedido.Size = new System.Drawing.Size(140, 23);
+            this.btn_pedido.Size = new System.Drawing.Size(99, 37);
             this.btn_pedido.TabIndex = 7;
             this.btn_pedido.Text = "Nuevo Pedido";
             this.btn_pedido.UseVisualStyleBackColor = true;
@@ -69,9 +69,9 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.dgv_pedidos);
-            this.groupBox1.Location = new System.Drawing.Point(256, 34);
+            this.groupBox1.Location = new System.Drawing.Point(340, 34);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(482, 255);
+            this.groupBox1.Size = new System.Drawing.Size(398, 255);
             this.groupBox1.TabIndex = 10;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Pedido";
@@ -81,8 +81,9 @@
             this.dgv_pedidos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_pedidos.Location = new System.Drawing.Point(6, 19);
             this.dgv_pedidos.Name = "dgv_pedidos";
-            this.dgv_pedidos.Size = new System.Drawing.Size(470, 230);
+            this.dgv_pedidos.Size = new System.Drawing.Size(386, 230);
             this.dgv_pedidos.TabIndex = 0;
+            this.dgv_pedidos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_pedidos_CellClick);
             // 
             // frm_Salas
             // 

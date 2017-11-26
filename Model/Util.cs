@@ -159,5 +159,13 @@ namespace Model
         public static DataTable dataSala { get; set; }
 
         public static CL_Usuario usuario { get; set; }
+
+        private static int conta=1;
+        public static int getContador()
+        {
+            int aux = conta + 1;
+            conta = aux;
+            return conta;
+        }
     }
 }
