@@ -12,3 +12,4 @@ D:\C-\Model\bin\Debug\Model.dll
 D:\C-\Model\bin\Debug\Model.pdb
 D:\C-\Model\obj\Debug\Model.dll
 D:\C-\Model\obj\Debug\Model.pdb
+C:\Users\SteinnxLabs\Documents\Visual Studio 2017\Proyects\C-\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache

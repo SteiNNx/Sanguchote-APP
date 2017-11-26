@@ -15,12 +15,12 @@ namespace Vista
         public frm_Home()
         {
             InitializeComponent();
-            insertarPanel(new frm_Salas());
+            insertarPanel(new frm_Pedido());
         }
 
         private void btn_pedido_Click(object sender, EventArgs e)
         {
-            insertarPanel(new frm_Salas());
+            insertarPanel(new frm_Pedido());
         }
 
         private void insertarPanel(Form nuevo_forms)
