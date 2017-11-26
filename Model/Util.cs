@@ -156,6 +156,7 @@ namespace Model
         }
 
         public static DataTable data { get; set; }
+        public static DataTable dataSala { get; set; }
 
         public static CL_Usuario usuario { get; set; }
     }

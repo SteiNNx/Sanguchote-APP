@@ -61,6 +61,7 @@ namespace Vista
             ccb_cantidad.DataSource = new BindingSource(dicCantidad, null);
             ccb_cantidad.DisplayMember = "Value";
             ccb_cantidad.ValueMember = "Key";
+            pb_producto.ImageLocation= pro.Url_imagen;
         }
 
         private void llenarCombobox()

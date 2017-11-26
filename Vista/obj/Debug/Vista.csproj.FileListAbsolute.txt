@@ -42,3 +42,4 @@ C:\Users\SteinnxLabs\Documents\Visual Studio 2017\Proyects\C-\Vista\bin\Debug\Da
 C:\Users\SteinnxLabs\Documents\Visual Studio 2017\Proyects\C-\Vista\bin\Debug\DataAccesOracle.dll.config
 C:\Users\SteinnxLabs\Documents\Visual Studio 2017\Proyects\C-\Vista\bin\Debug\DataAccesSQL.pdb
 C:\Users\SteinnxLabs\Documents\Visual Studio 2017\Proyects\C-\Vista\obj\Debug\Vista.frm_ListarComprasOracle.resources
+C:\Users\SteinnxLabs\Documents\Visual Studio 2017\Proyects\C-\Vista\obj\Debug\Vista.frm_Salas.resources

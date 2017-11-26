@@ -43,8 +43,10 @@
             this.label5 = new System.Windows.Forms.Label();
             this.lbl_total = new System.Windows.Forms.Label();
             this.lbl_mensaje = new System.Windows.Forms.Label();
+            this.pb_producto = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_pedido)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_producto)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -170,7 +172,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("FrankRuehl", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(26, 223);
+            this.label5.Location = new System.Drawing.Point(26, 239);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(107, 17);
             this.label5.TabIndex = 14;
@@ -180,7 +182,7 @@
             // 
             this.lbl_total.AutoSize = true;
             this.lbl_total.Font = new System.Drawing.Font("FrankRuehl", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_total.Location = new System.Drawing.Point(146, 223);
+            this.lbl_total.Location = new System.Drawing.Point(146, 239);
             this.lbl_total.Name = "lbl_total";
             this.lbl_total.Size = new System.Drawing.Size(107, 17);
             this.lbl_total.TabIndex = 15;
@@ -195,12 +197,22 @@
             this.lbl_mensaje.Size = new System.Drawing.Size(0, 17);
             this.lbl_mensaje.TabIndex = 16;
             // 
+            // pb_producto
+            // 
+            this.pb_producto.Location = new System.Drawing.Point(139, 156);
+            this.pb_producto.Name = "pb_producto";
+            this.pb_producto.Size = new System.Drawing.Size(88, 80);
+            this.pb_producto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_producto.TabIndex = 17;
+            this.pb_producto.TabStop = false;
+            // 
             // frm_Pedido
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(24)))), ((int)(((byte)(34)))));
             this.ClientSize = new System.Drawing.Size(750, 301);
+            this.Controls.Add(this.pb_producto);
             this.Controls.Add(this.lbl_mensaje);
             this.Controls.Add(this.lbl_total);
             this.Controls.Add(this.label5);
@@ -220,6 +232,7 @@
             this.Text = "frm_Pedido";
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_pedido)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_producto)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -242,5 +255,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label lbl_total;
         private System.Windows.Forms.Label lbl_mensaje;
+        private System.Windows.Forms.PictureBox pb_producto;
     }
 }
