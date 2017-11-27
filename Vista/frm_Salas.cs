@@ -17,6 +17,8 @@ namespace Vista
         ServiceReference1.Service1Client serv = new ServiceReference1.Service1Client();
         DataTable aux_data;
 
+
+
         public frm_Salas()
         {
             InitializeComponent();
@@ -68,9 +70,13 @@ namespace Vista
             }
             DataRow dr = aux_data.NewRow();
             dr["N° Sala"] = cbb_sala.Text;
-            dr["Pedido N°"] = Util.getContador();
+            int pedNum= Util.getContador();
+            dr["Pedido N°"] = pedNum;
             aux_data.Rows.Add(dr);
             Util.dataSala = aux_data;
+
+            Util.listPedidos.Add(pedNum,Util.data);
+
             BindingSource bs_datos = new BindingSource();
             bs_datos.DataSource = aux_data;
             dgv_pedidos.DataSource = bs_datos;
@@ -83,12 +89,9 @@ namespace Vista
                 if (dgv_pedidos.Rows[e.RowIndex].Cells[2].Value.ToString() != "")
                 {
                     int id = Convert.ToInt32(dgv_pedidos.Rows[e.RowIndex].Cells[2].Value.ToString());
-                    this.Close();
-                    frm_Pedido ped = new frm_Pedido();
-                    ped.TopLevel = false;
-
-                    
-                    ped.Show();
+                    string  sala = dgv_pedidos.Rows[e.RowIndex].Cells[1].Value.ToString();
+                    frm_Pedido ped = new frm_Pedido(id,sala);                    
+                    ped.ShowDialog();
                 }
             }
         }

@@ -15,7 +15,7 @@ namespace Vista
         public frm_Home()
         {
             InitializeComponent();
-            insertarPanel(new frm_Pedido());
+            insertarPanel(new frm_Salas());
         }
 
         private void btn_pedido_Click(object sender, EventArgs e)

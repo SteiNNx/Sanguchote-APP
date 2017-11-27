@@ -227,9 +227,9 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "frm_Pedido";
-            this.Text = "frm_Pedido";
+            this.Text = "Pedido";
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_pedido)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_producto)).EndInit();

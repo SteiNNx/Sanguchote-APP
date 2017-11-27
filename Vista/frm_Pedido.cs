@@ -17,6 +17,8 @@ namespace Vista
     {
         ServiceReference1.Service1Client serv = new ServiceReference1.Service1Client();
         DataTable aux_data;
+        int id=0;
+
         public frm_Pedido()
         {
             InitializeComponent();
@@ -29,10 +31,24 @@ namespace Vista
             else { lbl_total.Text = ""; }
             
         }
+        public frm_Pedido(int p_id,string sala)
+        {
+            InitializeComponent();
+            llenarCombobox();
+            llenarCampos();
+            id = p_id;
+            if (Util.listPedidos[id] != null)
+            {
+                llenarGrid();
+            }
+            else { lbl_total.Text = ""; }
+            lbl_mensaje.Text = id.ToString()+sala;
+
+        }
 
         private void llenarGrid()
         {
-            aux_data = Util.data;
+            aux_data = Util.listPedidos[id];
             BindingSource bs_datos = new BindingSource();
             bs_datos.DataSource = aux_data;
             dgv_pedido.DataSource = bs_datos;
@@ -86,7 +102,7 @@ namespace Vista
         {
             try
             {
-                if (Util.data==null)
+                if (Util.listPedidos[id] == null)
                 {
                     aux_data = new DataTable();
                     aux_data.Columns.Add("ID");
@@ -96,7 +112,7 @@ namespace Vista
                 }
                 else
                 {
-                    aux_data = Util.data;
+                    aux_data = Util.listPedidos[id];
                 }
                 DataRow dr = aux_data.NewRow();
 
@@ -116,7 +132,8 @@ namespace Vista
                 dr["Precio"] =lbl_precio.Text;
                 dr["Cantidad"] =ccb_cantidad.Text;
                 aux_data.Rows.Add(dr);
-                Util.data = aux_data;
+                Util.listPedidos[id] = aux_data;
+                Util.listPedidos[id] = aux_data;
                 BindingSource bs_datos = new BindingSource();
                 bs_datos.DataSource = aux_data;
                 dgv_pedido.DataSource = bs_datos;
@@ -140,7 +157,7 @@ namespace Vista
                     int precio = precioTotal();
                     comp.Total_Pago = precio;
                     string xmlCompra = Util.SerializeCompra<CL_Compra>(comp);
-                    MessageBox.Show(xmlCompra);
+                    //MessageBox.Show(xmlCompra);
                     bool resp = serv.insertarCompra(xmlCompra);
                     if (resp)
                     {
@@ -171,7 +188,18 @@ namespace Vista
                         serv.insertarRegistrarVentas(xmlRegistroCompra);
                         lbl_mensaje.Text = "Pedido Exitoso";
                         Util.data = null;
+                        Util.listPedidos.Remove(id);
 
+                        foreach (DataRow item in Util.dataSala.Rows)
+                        {
+                            if (item[1].ToString()==id.ToString())
+                            {
+                                //Util.dataSala.Rows[Convert.ToInt32(item[1].ToString())].Delete();
+                                Util.dataSala.Rows.Remove(item);
+                                return;  
+                            //lbl_mensaje.Text = item[1].ToString();
+                            }
+                        }
                     }
                     else
                     {

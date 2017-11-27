@@ -12,3 +12,8 @@ D:\C-\Model\bin\Debug\Model.dll
 D:\C-\Model\bin\Debug\Model.pdb
 D:\C-\Model\obj\Debug\Model.dll
 D:\C-\Model\obj\Debug\Model.pdb
+D:\sala\Model\bin\Debug\Model.dll
+D:\sala\Model\bin\Debug\Model.pdb
+D:\sala\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+D:\sala\Model\obj\Debug\Model.dll
+D:\sala\Model\obj\Debug\Model.pdb

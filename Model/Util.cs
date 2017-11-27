@@ -167,5 +167,8 @@ namespace Model
             conta = aux;
             return conta;
         }
+
+
+        public static Dictionary<int, DataTable> listPedidos = new Dictionary<int, DataTable>();
     }
 }

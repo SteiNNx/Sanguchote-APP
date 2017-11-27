@@ -20,3 +20,10 @@ D:\C-\DataAccesSQL\bin\Debug\Model.pdb
 D:\C-\DataAccesSQL\obj\Debug\DataAccesSQL.csprojResolveAssemblyReference.cache
 D:\C-\DataAccesSQL\obj\Debug\DataAccesSQL.dll
 D:\C-\DataAccesSQL\obj\Debug\DataAccesSQL.pdb
+D:\sala\DataAccesSQL\bin\Debug\DataAccesSQL.dll
+D:\sala\DataAccesSQL\bin\Debug\DataAccesSQL.pdb
+D:\sala\DataAccesSQL\bin\Debug\Model.dll
+D:\sala\DataAccesSQL\bin\Debug\Model.pdb
+D:\sala\DataAccesSQL\obj\Debug\DataAccesSQL.csprojResolveAssemblyReference.cache
+D:\sala\DataAccesSQL\obj\Debug\DataAccesSQL.dll
+D:\sala\DataAccesSQL\obj\Debug\DataAccesSQL.pdb
